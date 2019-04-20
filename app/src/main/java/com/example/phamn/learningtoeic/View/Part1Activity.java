@@ -104,7 +104,7 @@ public class Part1Activity extends AppCompatActivity {
                 showZoomImage();
             }
         });
-        //srollView
+        //swipe srollView
         scrollView.setOnTouchListener(new OnSwipeTouchListener(Part1Activity.this) {
             public void onSwipeTop() {
                 Toast.makeText(Part1Activity.this, "top", Toast.LENGTH_SHORT).show();
