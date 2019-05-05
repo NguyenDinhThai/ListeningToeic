@@ -5,6 +5,7 @@ public class Vocabulary {
     private String spelling;
     private String mean;
     private String example;
+    private  boolean isChecked;
 
     public Vocabulary() {
     }
@@ -14,6 +15,14 @@ public class Vocabulary {
         this.spelling = spelling;
         this.mean = mean;
         this.example = example;
+    }
+
+    public Vocabulary(String word, String spelling, String mean, String example, boolean isChecked) {
+        this.word = word;
+        this.spelling = spelling;
+        this.mean = mean;
+        this.example = example;
+        this.isChecked = isChecked;
     }
 
     public String getWord() {
@@ -46,5 +55,10 @@ public class Vocabulary {
 
     public void setExample(String example) {
         this.example = example;
+    }
+
+    public boolean isChecked() {
+        return  isChecked;
+
     }
 }
